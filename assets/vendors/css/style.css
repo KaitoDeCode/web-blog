@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --primary-color: #122d5a;
+  --secondary-color: #b2b0bf;
+  --third-color: #2f4570;
+
+  --font-size-1: 52px;
+  --font-size-2: 42px;
+  --font-size-3: 22px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none !important;
+  list-style: none;
+}
+
+.text-primmary{
+  color: var(--primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.navbar .navbar-brand {
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+header {
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+  header{
+    width: 100%;
+  }
+}
+
+header .header-title {
+  font-size: var(--font-size-1);
+  font-weight: 900;
+}
+
+.hero-post .hero-post-img{
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero-post .hero-post-title{
+  font-size: var(--font-size-2);
+  font-weight: 900;
+}
+
+.hero-post .avatar,
+.card-post .avatar{
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.card-post{
+  height: 550px;
+  transition: 0.3s ease-in-out;
+}
+
+.card-post:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 2px 8px black;
+}
+
+.card-post .card-img-top{
+  height: 250px !important;
+  width: auto;
+  object-fit: cover;
+}
+
+.card-post .card-post-title{
+  font-size: var(--font-size-3);
+  font-weight: 700;
+}
