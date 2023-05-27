@@ -20,8 +20,8 @@
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav gap-3 me-auto">
                 <li class="nav-item"><a href="." class="nav-link active">Dashboard</a></li>
-                <li class="nav-item"><a href="." class="nav-link">Posts</a></li>
-                <li class="nav-item"><a href="." class="nav-link">Create Post</a></li>
+                <li class="nav-item"><a href="post.php" class="nav-link">Posts</a></li>
+                <li class="nav-item"><a href="create-post.php" class="nav-link">Create Post</a></li>
                 <li class="nav-item"><a href="." class="nav-link">Profile</a></li>
             </ul>
             <ul class="navbar-nav gap-3">
