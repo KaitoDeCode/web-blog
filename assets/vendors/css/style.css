@@ -58,7 +58,7 @@ a{
   color: var(--secondary-color);
 }
 
-header {
+header,.auth {
   width: 40%;
   margin: 0 auto;
 }
