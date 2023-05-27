@@ -3,7 +3,7 @@
 <section class="auth py-5">
     <div class="container">
         <h2 class="text-primmary text-center mb-4">Register</h2>
-        <form action="#" method="post">
+        <form action="php/register.php" method="post">
             <div class="mb-3">
                 <label for="name">Full name</label>
                 <input placeholder="Enter your name" type="text" name="name" id="name" class="form-control" required>
