@@ -26,7 +26,7 @@
             </ul>
             <ul class="navbar-nav gap-3">
             <li class="nav-item"><p class="nav-link active">Adi Kurniawan</p></li>
-            <li class="nav-item"><a href="login.php" class="nav-link">Log Out</a></li>
+            <li class="nav-item"><a href="php/logout.php" class="nav-link">Log Out</a></li>
             </ul>
         </div>
     </div>
