@@ -1,37 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG APP </title>
-    <link rel="stylesheet" href="./assets/vendors/css/style.css">
-    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
-</head>
-<body>
-    
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg bg-white py-3">
-    <div class="container">
-        <a href="#" class="navbar-brand text-uppercase">Blog.Dev</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav gap-3 mx-auto">
-                <li class="nav-item"><a href="." class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="." class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="." class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="." class="nav-link">About Us</a></li>
-            </ul>
-            <ul class="navbar-nav gap-3">
-            <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
-            <li class="nav-item"><a href="#" class="btn btn-primary rounded-pill">Register</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- end of Navigation -->
+<?php
+include('components/header.php');
+?>
 
 <!-- Header -->
 <header class="py-5">
@@ -157,31 +126,6 @@
     </div>
 </section>
 
-<footer class="py-5">
-    <div class="container">
-        <hr class="mb-3">
-        <div class="row align items-center justify-content-between">
-            <div class="col-md-4">
-                <ul class="list-unstyled d-flex align-items-center justify-content-center justify-content-md-start gap-3 mb-3 mb-md-0">
-                    <li><a href="#" class="text-primmary">Home</a></li>
-                    <li><a href="#" class="text-primmary">Blog</a></li>
-                    <li><a href="#" class="text-primmary">Services</a></li>
-                    <li><a href="#" class="text-primmary">About Ss</a></li>
-                    <li><a href="#" class="text-primmary">Contact US</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <a href="#" class="text-primmary fw-bolder fs-4 text-uppercase text-center d-block mb-3 mb-md-0">
-                    Blog.Dev
-                </a>
-            </div>
-            <div class="col-md-4">
-                <p class="m-0 text-secondary text-center text-md-end "> &copy; 2023. All Right Reversed</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<?php
+include('components/footer.php');
+?>

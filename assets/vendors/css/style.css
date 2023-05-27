@@ -63,8 +63,12 @@ header {
   margin: 0 auto;
 }
 
+header.detail,.detail-content{
+  width: 75% !important;
+}
+
 @media screen and (max-width: 768px){
-  header{
+  header,header.detail{
     width: 100%;
   }
 }
