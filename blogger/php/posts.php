@@ -35,13 +35,21 @@ if(isset($_POST['action'])){//DIGUNAKAN UNTUK MENANMBAH DATA DAN MENGUPDATE DATA
 
     if($_POST['action'] ==='add'){
         // Jika perintah nya add maka akan dilakuakan perintah dibawah ini
-        $query = mysqli_query($connect,"INSERT INTO posts SET title='$title', slug='$slug', category='$category' ,user_id='$user_id', body = '$body', date = '$date',image = '$image_file'");
-        copy($temp,"../../assets/images/post".$image_file);
+        $query = mysqli_query($connect,"INSERT INTO posts SET title='$title', slug='$slug', category='$category' ,user_id='$user_id', body = '$body', date='$date',image = '$image_file'");
+        copy($temp,"../../assets/images/posts/" . $image_file);
 
         header('location: ../posts.php');
     }elseif($_POST['action'] === 'update'){
          // Jika perintah nya update maka akan dilakuakan perintah dibawah ini
+        $id = $_POST['id'];
+        if(!empty($image)){
+            $query = mysqli_query($connect,"UPDATE posts SET title='$title', slug='$slug', category='$category' ,user_id='$user_id', body = '$body', date='$date',image = '$image_file' WHERE id = '$id' ");
+            copy($temp,"../../assets/images/posts/" . $image_file);
+        }else{
+            $query = mysqli_query($connect,"UPDATE posts SET title='$title', slug='$slug', category='$category' ,user_id='$user_id', body = '$body', date='$date' WHERE id = '$id' ");
+        }
 
+        header('location: ../posts.php');
     }
 }elseif(isset($_GET['action'])){// NETHOD GET DIGUNAKAN UNTUK MENGHAPUS DATA
 

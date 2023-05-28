@@ -27,7 +27,7 @@
                             <td><?=$data['title']?></td>
                             <td><?=$data['category']?></td>
                             <td>
-                                <a href="edit-post.php" class="btn btn-warning">Edit</a>
+                                <a href="edit-post.php?id=<?=$data['id']?>" class="btn btn-warning">Edit</a>
                                 <a href="#" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
