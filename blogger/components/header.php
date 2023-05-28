@@ -1,9 +1,12 @@
  <?php
     include('../config/connect.php');
-
+    
+    // error_reporting(E_ALL);
+    // ini_set('display_errors', 1);
     // if(!isset($_SESSION["user_id"])){
     //     header('location : ../');
     // }
+
 
     $user_logged = mysqli_fetch_array(mysqli_query($connect,"SELECT * FROM users WHERE id = '$_SESSION[user_id]'"));
 ?> 
