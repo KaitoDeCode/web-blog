@@ -1,7 +1,6 @@
 <?php
 include('components/header.php');
 ?>
-
 <!-- Header -->
 <header class="py-5">
 <div class="container">

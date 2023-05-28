@@ -17,24 +17,23 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr style="vertical-align: middle;">
-                        <td>1</td>
-                        <td> Finding Temporal Patterns in Twitter Posts: Exploratory Data Analysis with Python</td>
-                        <td>Programming</td>
-                        <td>
-                            <a href="edit-post.php" class="btn btn-warning">Edit</a>
-                            <a href="#" class="btn btn-danger">Delete</a>
-                        </td>
-                    </tr>
-                    <tr style="vertical-align: middle;">
-                        <td>2</td>
-                        <td> Lorem ipsum dolor sit amet consectetur.</td>
-                        <td>Programming</td>
-                        <td>
-                            <a href="edit-post.php" class="btn btn-warning">Edit</a>
-                            <a href="#" class="btn btn-danger">Delete</a>
-                        </td>
-                    </tr>
+                   <?php
+                    $no = 1;
+                    $query = mysqli_query($connect,"SELECT * FROM posts WHERE user_id='$_SESSION[user_id]'");
+                    while($data = mysqli_fetch_array($query)){
+                        ?>
+                        <tr style="vertical-align: middle;">
+                            <td><?=$no;?></td>
+                            <td><?=$data['title']?></td>
+                            <td><?=$data['category']?></td>
+                            <td>
+                                <a href="edit-post.php" class="btn btn-warning">Edit</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                        <?php
+                    }
+                   ?>
                 </tbody>
             </table>
         </div>

@@ -1,3 +1,12 @@
+ <?php
+    include('../config/connect.php');
+
+    // if(!isset($_SESSION["user_id"])){
+    //     header('location : ../');
+    // }
+
+    $user_logged = mysqli_fetch_array(mysqli_query($connect,"SELECT * FROM users WHERE id = '$_SESSION[user_id]'"));
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +34,7 @@
                 <li class="nav-item"><a href="profile.php" class="nav-link">Profile</a></li>
             </ul>
             <ul class="navbar-nav gap-3">
-            <li class="nav-item"><p class="nav-link active">Adi Kurniawan</p></li>
+            <li class="nav-item"><p class="nav-link active"><?php echo $user_logged['name'] ?></p></li>
             <li class="nav-item"><a href="php/logout.php" class="nav-link">Log Out</a></li>
             </ul>
         </div>
